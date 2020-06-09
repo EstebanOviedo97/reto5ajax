@@ -6,53 +6,77 @@
 #  \___/____/____/··
 #  ·················
 */
+
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700');
 /*------ Variables */
-:root{
+
+:root {
   /*------ Colores */
   --green-color: #7ACC2D;
   --black-color: #313337;
   --white-color: white;
   /*------ Tipografía */
-  --normal:12px;
+  --normal: 12px;
   /*------ Espaciado */
-  --space:10px;
-  --space-2:20px;
+  --space: 10px;
+  --space-2: 20px;
   /*------ Box shadow*/
-  --box:0px 0 2px 1px #e6e5e9;
+  --box: 0px 0 2px 1px #e6e5e9;
 }
 
 /* -------------------------------------------  */
-html, body{
-  margin:0;
+
+html, body {
+  margin: 0;
   padding: 0;
   font-family: 'Open Sans', sans-serif;
-  color: var(--black-color);
+  color: var(--white-color);
+  background-color: black;
 }
 
-p, label{
+hr {
+  border: 2px solid var(--white-color);
+  width: 98%;
+  opacity: .2;
+}
+
+#logo {
+  height: 68px;
+}
+
+#logo_h1 {
+  background-image: url(../images/fondo.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.colorLetra {
+  color: var(--black-color)
+}
+
+p, label {
   font-size: var(--normal);
 }
 
-
-
-
-nav{
+nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: var(--space);
   min-height: 60px;
-  background-color: var(--green-color);
+  background-color: black;
+  border-bottom: 2px solid yellow;
+  font-family:B612;
 }
 
-nav a{
+nav a {
   text-decoration: none;
-  color: var(--black-color);
-  font-size: var(--normal);
+  color: white;
+  font-size: 17px;
 }
 
-nav a:hover{
+nav a:hover {
   color: var(--white-color);
 }
 
@@ -60,25 +84,30 @@ nav ul {
   display: flex;
 }
 
-nav ul li{
+nav ul li {
   padding-right: 20px;
   list-style: none;
 }
 
-hr{
-  opacity: .2;
-}
-
 /* ------------------------------------------- MAIN SECTION */
 
-.main_section{
+.main_section {
   text-align: center;
   padding: 15%;
 }
 
+.main_section_compra{
+  text-align: center;
+  padding: 0.5%;
+}
+
 /* -------------------------------------------  PRODUCTOS */
 
-.products{
+.list-group {
+  display: inline-block;
+}
+
+.products {
   background-image: url("../images/curve.png");
   padding: 15%;
   background-position: center top;
@@ -86,93 +115,101 @@ hr{
   display: flex;
   height: 95px;
   background-size: cover;
-
 }
 
-.product{
+.product {
   padding: 20px;
   margin-top: -226px;
 }
 
-.image-product{
+.image-product {
   text-align: center;
 }
 
-.content{
+.content {
   padding: 20px;
   background: var(--white-color);
   border-radius: 3px;
   box-shadow: 0px 0 2px 1px #e6e5e9;
 }
 
-.main_btn{
+.main_btn {
   padding: var(--space);
-  background-color: var(--green-color);
+  background-color: var(--black-color);
   width: 100%;
   border: 0px;
   border-radius: 2px;
   cursor: pointer;
   color: var(--white-color);
 }
-.main_btn:hover{
-  background-color: #63a426;
+
+.main_btn:hover {
+  background-color: gray;
 }
 
 /* Beneficios */
-.beneficios{
+
+.beneficios {
   padding: 10%;
   display: flex;
 }
 
-.beneficio{
+.beneficio {
   text-align: center;
   padding: 20px;
 }
 
-.beneficio img{
+.beneficio img {
   max-height: 100px
 }
 
-.text_beneficio{
+.text_beneficio {
   text-align: justify;
 }
 
 /* Mentions */
-.mentions{
+
+.mentions {
   display: flex;
   padding: 5%;
 }
-.mention img{
+
+.mention img {
   width: 100%;
 }
-h2.mention_title{
+
+h2.mention_title {
   text-align: center;
 }
-.mention{
+
+.mention {
   padding: var(--space);
 }
-.content_mention{
+
+.content_mention {
   box-shadow: 0px 0 2px 1px #e6e5e9;
 }
-.mention .text{
+
+.mention .text {
   padding: var(--space);
 }
+
 /* ------------------------------------------- Venta */
 
-.modulo_pago{
-background-color:var(--white-color);
-box-shadow: var(--box);
-padding:var(--space-2);
+.modulo_pago {
+  background-color: var(--white-color);
+  box-shadow: var(--box);
+  padding: var(--space-2);
 }
 
-.modulo_pago_images{
+.modulo_pago_images {
   max-width: 150px;
   text-align: center;
   width: 100%;
-  margin:auto;
+  margin: auto;
 }
 
-.data{
+.data {
   margin-top: var(--space);
   width: 100%;
   padding: 5px;
@@ -181,17 +218,74 @@ padding:var(--space-2);
   box-sizing: border-box;
 }
 
-.modulo_pago .main_btn{
-      margin-top: 10px;
+.modulo_pago .main_btn {
+  margin-top: 10px;
 }
 
+/* ------------------------------------------- Formulario */
+
+.form-group {}
+
+/* -------------------------------------------  Index Music*/
+
+#fondoMusic {
+  background-image: url(../images/fondoMusic.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+/* -------------------------------------------  FAQS*/
+.acordeon{
+  background-color: black;
+}
+/* -------------------------------------------  PRODUCTO html*/
+
+.colorProducto {
+  color: black;
+}
+
+.titulosProducto {
+  color: white;
+}
+
+.btn {
+  width: 100%;
+}
+
+.music {
+  display: flex;
+}
 
 /* ------------------------------------------- Footer */
-footer{
-  display: flex;
-  justify-content: space-between;
+
+footer {
+  display: block;
+  background-color: black;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  width: 100%;
+  border-top: 2px solid yellow;
+  text-align: center;
   font-size: var(--normal);
-  background-color: var(--black-color);
-  padding: var(--space);
+}
+
+footer a {
   color: var(--white-color);
+}
+
+footer a:hover {
+  color: red;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 90px;
+  text-align: center;
+  text-decoration: none;
+}
+
+.fa-facebook{
+ 
 }

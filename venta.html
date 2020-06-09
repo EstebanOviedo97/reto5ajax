@@ -1,88 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="description" content="Este es un sitio de producto genial">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/estilos.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link rel="stylesheet" href="css/grid.css">
-    <title>BRAND📦</title>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<body>
+<div class="w3-container">
 
-  </head> <!-- Cierra head -->
-  <body>
-    <nav>
-      <a href="index.html"><img src="images/logo.png" alt=""></a>
-      <ul>
-        <li>
-          <a href="faqs.html">Faqs</a></li>
-        <li>
-          <a href="#">Producto y descripción</a></li>
-      </ul>
-    </nav>
+<h2>Active Accordions</h2>
+<p>In this example we add the w3-red class to an active accordion (when the button is clicked on and the content is opened).</p>
 
-    <!-- Empiezan Formulario Venta -->
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-    <div class="container">
+<button onclick="myFunction('Demo1')" class="w3-button w3-block w3-black w3-left-align">Open Section 1</button>
+<div id="Demo1" class="w3-hide w3-container">
+    <p>Some text..</p>
+</div>
 
-      <div class="row">
-        <div class="col-4">
-          <div class="modulo_pago">
-            <div class="modulo_pago_images">
-              <img src="images/box2.png" alt="">
-            </div>
-            <h3>
-              Producto 1
-            </h3>
-            <p>
-              Miles de productos hay en el mercado, pero nada como una caja con gatitos
-            </p>
-          </div>
-        </div>
-        <div class="col-8">
-          <div class="modulo_pago">
-              <form action="http://google.com">
-                <label for="name">Nombre</label>
-                <br>
-                <input type="text" placeholder="" name="name" class="data">
-                <br>
-                <label for="email">E-mail</label>
-                <br>
-                <input type="text" placeholder="" name="email" class="data">
-                <br>
-                <label for="phone">Teléfono</label>
-                <br>
-                <input type="text" placeholder="" name="phone" class="data">
-                <br>
-                <input type="submit" class="main_btn" name="submit" value="Confirmar pago">
-              </form>
+<button onclick="myFunction('Demo2')" class="w3-button w3-block w3-black w3-left-align">Open Section 2</button>
+<div id="Demo2" class="w3-hide w3-container">
+    <p>Some other text..</p>
+</div>
 
-          </div>
-        </div>
-      </div>
+</div>
+<script>
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-black", "w3-red");
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+    x.previousElementSibling.className = 
+    x.previousElementSibling.className.replace("w3-red", "w3-black");
+  }
+}
+</script>
 
-    </div>
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
-
-
-    <!-- Empiezan Formulario beneficios -->
-
-    <!-- Inicio de footer -->
-    <footer>
-      <div class="option">Términos y condiciones</div>
-      <div class="option">contacto@brand.com</div>
-    </footer>
-    <!-- Fin de Footer -->
-
-    <!-- Script -->
-    <script src="scripts/script.js"></script>
-  </body> <!-- Cierra body -->
-</html> <!-- Cierra html -->
+</body>
+</html>
