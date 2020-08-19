@@ -19,131 +19,105 @@
     <title>Fomulario</title>
 </head>
 <div id="contenido">
-<body>
-    <nav class="fadeInDown">
-        <a href="home.html"><img id="logo" src="images/digweed-john-582f8e2ccf4df.png" alt=""></a>
-        <ul>
-            <li>
-                <a href="faqs.html">Faqs</a>
-            </li>
-            <li>
-                <a href="producto.html">Productos y descripción</a>
-            </li>
-        </ul>
-    </nav><br>
 
-    
-        <div class="container">
-            <h2 class="text-center">Llene el formulario para completar su compra</h2>
-            <form id="myform" action="compraExitosa.html">
-                <div>
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <label for="name" class="">Nombre</label>
-                            <input type="text" id="name" name="nombre" class="form-control" placeholder="Nombre"
-                                required>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <label for="apellido" class="">Apellido</label>
-                            <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido"
-                                required>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label>Direccion</label>
-                            <input type="text" class="form-control" id="street1_id" name="street1"
-                                placeholder="N de la casa y nombre de la calle" required>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label>Localidad/Ciudad</label>
-                            <input type="text" class="form-control" id="street2_id" name="street2"
-                                placeholder="Apartmento, habitacion, casa." required>
-                        </div>
-                    </div>
 
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label>Provincia</label>
-                            <select class="form-control" id="state_id">
-                                <option value="BA">Buenos Aires</option>
-                                <option value="CA">Catamarca</option>
-                                <option value="CH">Chaco</option>
-                                <option value="CT">Chubut</option>
-                                <option value="CB">Córdoba</option>
-                                <option value="CO">Corrientes</option>
-                                <option value="ER">Entre Ríos</option>
-                                <option value="FO">Formosa</option>
-                                <option value="JU">Jujuy</option>
-                                <option value="LP">La Pampa</option>
-                                <option value="LR">La Rioja</option>
-                                <option value="ME">Mendoza</option>
-                                <option value="MI">Misiones</option>
-                                <option value="NE">Neuquén</option>
-                                <option value="RN">Río Negro</option>
-                                <option value="SA">Salta</option>
-                                <option value="SJ">San Juan</option>
-                                <option value="SC">Santa Cruz</option>
-                                <option value="SF">Santa Fe</option>
-                                <option value="SE">Santiago del Estero</option>
-                                <option value="TF">Tierra del Fuego</option>
-                                <option value="TU">Tucumán</option>
-                            </select>
-                        </div>
+    <div class="container">
+        <h2 class="text-center">Llene el formulario para completar su compra</h2>
+        <form id="myform" action="compraExitosa.html">
+            <div>
+                <div class="col-md-12">
+                    <div class="md-form mb-0">
+                        <label for="name" class="">Nombre</label>
+                        <input type="text" id="name" name="nombre" class="form-control" placeholder="Nombre" required>
                     </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <!-- City-->
-                            <label>Codigo Postal</label>
-                            <input type="text" class="form-control" id="cp" name="cp" placeholder="CP" required>
-                        </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="md-form mb-0">
+                        <label for="apellido" class="">Apellido</label>
+                        <input type="text" id="apellido" name="apellido" class="form-control" placeholder="Apellido"
+                            required>
                     </div>
-                    <div class="col-12">
-                        <div class="form-group">
-                            <label>Telefono</label>
-                            <input type="text" class="form-control" id="telefono" name="telefono" placeholder="#####"
-                                required>
-                        </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label>Direccion</label>
+                        <input type="text" class="form-control" id="street1_id" name="street1"
+                            placeholder="N de la casa y nombre de la calle" required>
                     </div>
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                            <label for="email" class="">Correo Electronico</label>
-                            <input type="email" class="form-control" id="email" name="email" placeholder="email"
-                                required>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="form-group"><br>
-                            <h3 class="text-center">Notas del pedido (opcional)</h3>
-                            <textarea type="text" class="form-control" id="mensaje" name="mensaje"
-                                placeholder="Opcional" rows="7"></textarea>
-                        </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label>Localidad/Ciudad</label>
+                        <input type="text" class="form-control" id="street2_id" name="street2"
+                            placeholder="Apartmento, habitacion, casa." required>
                     </div>
                 </div>
 
-                
-                    <button href="compraExitosa.html" class="btn btn-dark">Enviar formulario</button>
-                    <br>
-                    <br>
-                
-            </form>
-        </div>
-
-
-
-        <footer class="text-align-center"><br>
-            <p><a href="TyC.html" class="text-white ">Terminos y Condiciones</a></p>
-            <div class="option">© 2020 JOHN DIGWEED. All Rights Reserved</div>
-            <div class="iconos">
-                <a href="https://www.facebook.com/djjohndigweed/" target="_blank" class="fa fa-facebook"></a>
-                <a href="https://twitter.com/djjohndigweed" target="_blank" class="fa fa-twitter"></a>
-                <a href="https://www.instagram.com/djjohndigweed/" class="fa fa-instagram"></a>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label>Provincia</label>
+                        <select class="form-control" id="state_id">
+                            <option value="BA">Buenos Aires</option>
+                            <option value="CA">Catamarca</option>
+                            <option value="CH">Chaco</option>
+                            <option value="CT">Chubut</option>
+                            <option value="CB">Córdoba</option>
+                            <option value="CO">Corrientes</option>
+                            <option value="ER">Entre Ríos</option>
+                            <option value="FO">Formosa</option>
+                            <option value="JU">Jujuy</option>
+                            <option value="LP">La Pampa</option>
+                            <option value="LR">La Rioja</option>
+                            <option value="ME">Mendoza</option>
+                            <option value="MI">Misiones</option>
+                            <option value="NE">Neuquén</option>
+                            <option value="RN">Río Negro</option>
+                            <option value="SA">Salta</option>
+                            <option value="SJ">San Juan</option>
+                            <option value="SC">Santa Cruz</option>
+                            <option value="SF">Santa Fe</option>
+                            <option value="SE">Santiago del Estero</option>
+                            <option value="TF">Tierra del Fuego</option>
+                            <option value="TU">Tucumán</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <!-- City-->
+                        <label>Codigo Postal</label>
+                        <input type="text" class="form-control" id="cp" name="cp" placeholder="CP" required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group">
+                        <label>Telefono</label>
+                        <input type="text" class="form-control" id="telefono" name="telefono" placeholder="#####"
+                            required>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="md-form mb-0">
+                        <label for="email" class="">Correo Electronico</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="email" required>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <div class="form-group"><br>
+                        <h3 class="text-center">Notas del pedido (opcional)</h3>
+                        <textarea type="text" class="form-control" id="mensaje" name="mensaje" placeholder="Opcional"
+                            rows="7"></textarea>
+                    </div>
+                </div>
             </div>
-        </footer>
+
+
+            <button href="compraExitosa.html" class="btn btn-dark">Enviar formulario</button>
+            <br>
+            <br>
+
+        </form>
+    </div>
 
     </body>
 </div>
